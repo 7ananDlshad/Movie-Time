@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { constructUrl } from "./Api";
-import { Dropdown } from "react-bootstrap";
+import React, { useState, useEffect } from 'react';
+import { constructUrl } from './Api';
+import { Dropdown } from 'react-bootstrap';
 
 export default function DropdownCategories(props) {
-  const SEARCH_URL_CATEGORIES = constructUrl("genre/movie/list", "");
+  const SEARCH_URL_CATEGORIES = constructUrl('genre/movie/list', '');
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
@@ -11,24 +11,25 @@ export default function DropdownCategories(props) {
       .then((res) => res.json())
       .then((data) => {
         if (data.genres !== undefined)
-          setCategories([{ id: 0, name: "All" }, ...data.genres]);
+          setCategories([{ id: 0, name: 'All' }, ...data.genres]);
       })
       .catch((err) => console.log(err));
   }, [SEARCH_URL_CATEGORIES]);
 
   return (
-    <Dropdown style={{ marginRight: "5px" }}>
-      <Dropdown.Toggle variant="info" id="dropdown-basic">
-        {props.category.name || "Categories"}
+    <Dropdown style={{ marginRight: '5px' }}>
+      <Dropdown.Toggle id="dropdown-basic" className="button-style bg-orange">
+        {props.category.name || 'Categories'}
       </Dropdown.Toggle>
 
-      <Dropdown.Menu>
+      <Dropdown.Menu className="bg-black">
         {categories.length > 0 &&
           categories.map((category) => (
             <Dropdown.Item
               href="#"
               key={category.id}
               onSelect={() => props.setCategory(category)}
+              className="menu-item-style"
             >
               {category.name}
             </Dropdown.Item>
