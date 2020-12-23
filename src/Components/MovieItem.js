@@ -1,49 +1,40 @@
-import React from "react";
-import Card from "react-bootstrap/Card";
-import ReactStars from "react-rating-stars-component";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Card, Badge } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export default function MovieItem(props) {
-  const baseUrl = "https://image.tmdb.org/t/p/w500/";
+  const baseUrl = 'https://image.tmdb.org/t/p/w500/';
   const nullPhoto =
-    "https://image.tmdb.org/t/p/w500/wwemzKWzjKYJFfCeiB57q3r4Bcm.png";
+    'https://image.tmdb.org/t/p/w500/wwemzKWzjKYJFfCeiB57q3r4Bcm.png';
 
   return (
-    <Link to={`/Movie/${props.movie.id}`}>
-      <Card key={props.movie.id} style={{ width: "100%" }}>
-        <div className="card image">
-          <Card.Img
-            src={
-              props.movie.backdrop_path !== null
-                ? baseUrl + props.movie.backdrop_path
-                : nullPhoto
-            }
-          />
-          <React.Fragment>
-            <h6 className="center datails">
-              {props.movie.title}
-              <br />
-              <span>
-                Vote Average:{" "}
-                <ReactStars
-                  count={10}
-                  value={props.movie.vote_average}
-                  size={14}
-                  color2={"#ffd700"}
-                />{" "}
-                ({props.movie.vote_average})
-              </span>
-            </h6>
-          </React.Fragment>
-          <div className="details">
-            <div className="center">
-              <p>
-                Released <br />
-                {props.movie.release_date}
-              </p>
-            </div>
+    <Link to={`/Movie/${props.movie.id}`} className="links">
+      <Card key={props.movie.id} style={{ width: '100%' }}>
+        <Card.Img
+          src={
+            props.movie.backdrop_path !== null
+              ? baseUrl + props.movie.backdrop_path
+              : nullPhoto
+          }
+        />
+        <Card.Body>
+          <Card.Title
+            title={props.movie.title}
+            className="white-color titles"
+            style={{ fontSize: '18px' }}
+          >
+            {`${props.movie.title}`.substr(0, 20)}
+            {props.movie.title.length >= 20 ? '...' : ''}
+          </Card.Title>
+          <div className="badges-place">
+            <Badge className="white-color bg-orange">
+              {props.movie.release_date}
+            </Badge>
+            <Badge className="white-color bg-orange">
+              Rating: ({props.movie.vote_average})
+            </Badge>
           </div>
-        </div>
+        </Card.Body>
       </Card>
     </Link>
   );
