@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { constructUrl } from "./Api";
-import { Button, Container, Row, Spinner } from "react-bootstrap";
-import { useHistory } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { constructUrl } from './Api';
+import { Button, Container, Row, Spinner } from 'react-bootstrap';
+import { useHistory } from 'react-router-dom';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function ActorPage(props) {
   let actorId = props.match.params.actorId;
@@ -14,19 +16,22 @@ export default function ActorPage(props) {
       .then((res) => res.json())
       .then((data) => setPerson(data));
   }, [actorId]);
-  const baseUrl = "https://image.tmdb.org/t/p/w500/";
+  const baseUrl = 'https://image.tmdb.org/t/p/w500/';
   const nullPhoto =
-    "https://image.tmdb.org/t/p/w500/wwemzKWzjKYJFfCeiB57q3r4Bcm.png";
+    'https://image.tmdb.org/t/p/w500/wwemzKWzjKYJFfCeiB57q3r4Bcm.png';
 
   const profileImage = person.profile_path
     ? baseUrl + person.profile_path
     : nullPhoto;
-
+  console.log(person);
   return (
-    <div
-    className="flex-grow-1 bg-dark ">
-      <Button variant="secondary" onClick={() => history.goBack()}>
-        Back
+    <div className="flex-grow-1 ">
+      <Button onClick={() => history.goBack()} className="bg-orange m-2">
+        <FontAwesomeIcon
+          icon={faArrowLeft}
+          style={{ fontSize: '25px' }}
+          className="white-color "
+        />
       </Button>
       {person.id && (
         <Container>
@@ -35,11 +40,17 @@ export default function ActorPage(props) {
               <img width="100%" alt="posterImage" src={profileImage} />
             </div>
             <div className="col-8 text-white">
-              <h5>{person.name}</h5>
+              <h1>{person.name}</h1>
 
-              <h5>{person.birthday}</h5>
+              <small>
+                <em>
+                  {person.birthday} , {person.place_of_birth}
+                </em>
+              </small>
+              <br />
+              <br />
               <p>{person.biography}</p>
-              <h5>{person.place_of_birth}</h5>
+              <br />
             </div>
           </Row>
         </Container>
