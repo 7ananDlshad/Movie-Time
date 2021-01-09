@@ -144,7 +144,7 @@ export default function MoviePage(props) {
               key={actor.id}
               to={`/person/${actor.id}`}
               className="links"
-              style={{ margin: '5px' }}
+              style={{ margin: '15px 8px 8px 8px ' }}
             >
               <Card
                 key={'1' + actor.id}

@@ -1,9 +1,10 @@
- const TMDB_BASE_URL = `https://api.themoviedb.org/3`;
-const API_KEY = "542003918769df50083a13c415bbc602";
+const TMDB_BASE_URL = `https://api.themoviedb.org/3`;
+const API_KEY = '542003918769df50083a13c415bbc602';
 
-export  function constructUrl(path, query) {
-  const queryText = query ? `&query=${query}` : "";
+export function constructUrl(path, query) {
+  const queryText = query ? `&query=${query}` : '';
   return `${TMDB_BASE_URL}/${path}?api_key=${API_KEY}` + queryText;
 }
-
-
+export function arabicMovie() {
+  return `${TMDB_BASE_URL}/list/457?api_key=${API_KEY}`;
+}

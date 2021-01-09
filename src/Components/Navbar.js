@@ -21,9 +21,13 @@ export default function Navbar() {
       <NavBarBootstarp.Collapse id="basic-Navbar-nav">
         <Nav className="mr-auto">
           <Link to="/" className="white-color links titles">
-            Home
+            Home &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+          </Link>
+          <Link to="/list/457" className="white-color links titles">
+            Arabic Movie
           </Link>
         </Nav>
+
         <SearchBox />
       </NavBarBootstarp.Collapse>
     </NavBarBootstarp>

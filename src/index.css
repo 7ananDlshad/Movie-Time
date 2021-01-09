@@ -10,7 +10,7 @@ body {
   color: #ff7800;
 }
 .white-color {
-  color: white;
+  color: white !important;
 }
 .bg-black {
   background-color: rgba(15, 15, 15, 0.99) !important;
@@ -30,9 +30,11 @@ body {
   background-color: rgba(15, 15, 15, 0.99) !important;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
   border: 1px solid #000;
+  transition: all 0.3s;
 }
 .card:hover {
   box-shadow: 0 -1px 8px #ff7800;
+  transform: scale(1.05);
 }
 p {
   margin: 0 !important;
@@ -41,7 +43,7 @@ p {
   text-decoration: none;
 }
 .titles:hover {
-  color: #ff7800;
+  color: #ff7800 !important;
   text-decoration: none;
   transition: all 0.3s;
 }
