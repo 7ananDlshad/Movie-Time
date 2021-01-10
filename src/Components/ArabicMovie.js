@@ -38,7 +38,7 @@ function ArabicMovie() {
                       ? baseUrl + movie.poster_path
                       : nullPhoto
                   }
-                  style={{ height: '300px' }}
+                  className="height-image-card"
                 />
                 <Card.Body>
                   <Card.Title

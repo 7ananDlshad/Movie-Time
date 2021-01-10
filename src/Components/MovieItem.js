@@ -9,13 +9,14 @@ export default function MovieItem(props) {
 
   return (
     <Link to={`/Movie/${props.movie.id}`} className="links">
-      <Card key={props.movie.id} style={{ width: '100%' }}>
+      <Card key={props.movie.id} style={{ width: '100%', height: '100%' }}>
         <Card.Img
           src={
             props.movie.backdrop_path !== null
               ? baseUrl + props.movie.backdrop_path
               : nullPhoto
           }
+          className="height-image-card"
         />
         <Card.Body>
           <Card.Title

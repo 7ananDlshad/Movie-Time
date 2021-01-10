@@ -111,3 +111,6 @@ p {
   min-height: 100%;
   position: absolute;
 }
+.height-image-card {
+  height: 200px;
+}
