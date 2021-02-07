@@ -24,7 +24,19 @@ export default function Navbar() {
             Home &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
           </Link>
           <Link to="/list/457" className="white-color links titles">
-            Arabic Movie
+            Arabic Movie &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+          </Link>
+          <Link to="top_rated" className="white-color links titles">
+            Top Rated &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+          </Link>
+          <Link to="/list/457" className="white-color links titles">
+            Upcoming &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+          </Link>
+          <Link to="/list/457" className="white-color links titles">
+            Latest &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+          </Link>
+          <Link to="/list/457" className="white-color links titles">
+            Now Playing &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
           </Link>
         </Nav>
 
