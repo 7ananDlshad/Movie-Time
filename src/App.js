@@ -9,7 +9,6 @@ import Footer from './Components/Footer';
 import ArabicMovie from './Components/ArabicMovie';
 import TopRated from './Components/TopRated';
 import Upcoming from './Components/Upcoming';
-import Latest from './Components/Latest';
 import NowPlaying from './Components/NowPlaying';
 
 import ActorPage from './Components/ActorPage';
@@ -34,8 +33,7 @@ function App() {
             <Route path="/arabic_movies" component={ArabicMovie} />
             <Route path="/top_rated" component={TopRated} />
             <Route path="/upcoming" component={Upcoming} />
-            <Route path="latest" component={Latest} />
-            <Route path="now_playing" component={NowPlaying} />
+            <Route path="/now_playing" component={NowPlaying} />
           </Switch>
 
           <Footer />

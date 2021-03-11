@@ -26,16 +26,13 @@ export default function Navbar() {
           <Link to="/arabic_movies" className="white-color links titles">
             Arabic Movie &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
           </Link>
-          <Link to="/top_rated" className="white-color links titles">
-            Top Rated &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-          </Link>
           <Link to="/upcoming" className="white-color links titles">
             Upcoming &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
           </Link>
-          <Link to="latest" className="white-color links titles">
-            Latest &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+          <Link to="/top_rated" className="white-color links titles">
+            Top Rated &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
           </Link>
-          <Link to="now_playing" className="white-color links titles">
+          <Link to="/now_playing" className="white-color links titles">
             Now Playing &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
           </Link>
         </Nav>
