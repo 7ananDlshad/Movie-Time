@@ -31,11 +31,11 @@ function App() {
             <Route path={'/person/:actorId'} component={ActorPage} />
             <Route exact path="/" component={MainPage} />
             <Route path="/search" component={MainPage} />
-            <Route path="/list/457" component={ArabicMovie} />
-            <Route path="" component={TopRated} />
-            <Route path="" component={Upcoming} />
-            <Route path="" component={Latest} />
-            <Route path="" component={NowPlaying} />
+            <Route path="/arabic_movies" component={ArabicMovie} />
+            <Route path="/top_rated" component={TopRated} />
+            <Route path="/upcoming" component={Upcoming} />
+            <Route path="latest" component={Latest} />
+            <Route path="now_playing" component={NowPlaying} />
           </Switch>
 
           <Footer />
