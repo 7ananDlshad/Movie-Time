@@ -114,3 +114,23 @@ p {
 .height-image-card {
   height: 200px;
 }
+.play {
+  background-color: rgba(255, 120, 0, 0.5);
+  height: 8%;
+
+  text-align: center;
+  padding-top: 10px;
+}
+
+.play-link:hover {
+  text-decoration: none;
+}
+.scale-text {
+  color: white;
+  transition: all 0.3s;
+}
+.scale-text:hover {
+  color: white;
+  text-decoration: none;
+  transform: scale(1.5);
+}

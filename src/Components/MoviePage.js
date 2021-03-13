@@ -92,6 +92,15 @@ export default function MoviePage(props) {
             <Row>
               <div className="col-4 my-5">
                 <img width="100%" alt="posterImage" src={posterImage} />
+                <div className="play">
+                  <a
+                    href="https://www.netflix.com/iq-en/"
+                    className="play-link"
+                    target="_blank"
+                  >
+                    <p className="scale-text">WATCH NOW</p>
+                  </a>
+                </div>
               </div>
               <div className="col-6 text-white my-5">
                 <h1>{movie.original_title}</h1>
