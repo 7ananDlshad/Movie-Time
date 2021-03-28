@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { arabicMovie } from './Api';
+import { constructUrl } from './Api';
 import { Row, Col } from 'react-bootstrap';
 import { Card, Badge } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -16,7 +16,7 @@ function ArabicMovie() {
   useEffect(() => {
     async function fetchData() {
       // You can await here
-      SEARCH_URL = arabicMovie();
+      SEARCH_URL = constructUrl('list/457');
       let res = await fetch(SEARCH_URL);
       let data = await res.json();
 
@@ -24,7 +24,6 @@ function ArabicMovie() {
     }
     fetchData();
   }, []);
-  console.log(movies);
   return (
     <div className="flex-grow-1 container my-4">
       <Row md={3} lg={4} xs={1}>
