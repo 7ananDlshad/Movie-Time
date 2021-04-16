@@ -54,6 +54,22 @@ export default function SearchBox() {
     });
   };
 
+  const [listOfPredicates, setListOfPredicates] = useState([]);
+
+  useEffect(() => {
+    let autoComplit;
+    if (query !== '') {
+      autoComplit = constructUrl('search/multi', query);
+    }
+
+    fetch(autoComplit)
+      .then((res) => res.json())
+      .then((data) => {
+        setListOfPredicates(data.results);
+      });
+    console.log(listOfPredicates);
+  }, [query]);
+
   useEffect(() => fetchMovies(searchQuery), [searchQuery, categoryId]);
 
   function fetchMovies(query = '') {
@@ -93,7 +109,14 @@ export default function SearchBox() {
         className="mr-sm-2"
         value={query}
         onChange={onChange}
+        list="data"
       />
+      <datalist id="data">
+        {listOfPredicates.map((item, key) => (
+          <option key={key} value={item.original_title} />
+        ))}
+      </datalist>
+
       <Button type="submit" className="bg-orange">
         Search &nbsp;
         <span>
