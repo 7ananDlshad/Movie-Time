@@ -1,7 +1,7 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React, { useState } from 'react';
 import { Form, Button, Row, Col } from 'react-bootstrap';
 import { databaseRef } from '../firebase';
-import logo from '../images/logo.webp';
 
 import {
   faLinkedin,
