@@ -37,7 +37,12 @@ export default function ActorPage(props) {
         <Container>
           <Row>
             <div className="col-4">
-              <img width="100%" alt="posterImage" src={profileImage} />
+              <img
+                width="100%"
+                alt="posterImage"
+                src={profileImage}
+                className="mb-5"
+              />
             </div>
             <div className="col-8 text-white">
               <h1>{person.name}</h1>

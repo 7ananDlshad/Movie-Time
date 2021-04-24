@@ -34,19 +34,19 @@ function Footer() {
     <footer className="text-light footer-style">
       <Row className="mx-5 my-3">
         <Col>
-          <h2>Find Us</h2>
+          <h3>Find Us</h3>
           <div>
             <a href="https://www.linkedin.com/in/hanandlshad/" target="_blank">
               <FontAwesomeIcon
                 icon={faLinkedin}
-                style={{ fontSize: '35px' }}
+                style={{ fontSize: '25px' }}
                 className="white-color"
               />
             </a>
             <a href="https://github.com/7ananDlshad" target="_blank">
               <FontAwesomeIcon
                 icon={faGithubSquare}
-                style={{ fontSize: '35px' }}
+                style={{ fontSize: '25px' }}
                 className="white-color mx-3"
               />
             </a>
@@ -54,16 +54,16 @@ function Footer() {
             <a href="https://twitter.com/7ananTaha" target="_blank">
               <FontAwesomeIcon
                 icon={faTwitterSquare}
-                style={{ fontSize: '35px' }}
+                style={{ fontSize: '25px' }}
                 className="white-color"
               />
             </a>
           </div>
-          <h2 className="mt-5">E-mail</h2>
+          <h3 className="mt-5">E-mail</h3>
           <div>
             <p>info@movie.com</p>
           </div>
-          {/* <h2>Our Team</h2>
+          {/* <h3>Our Team</h3>
           <ol>
             <li className="py-3 size-of-li">
               Hanan Dlshad&nbsp;&nbsp;&nbsp;&nbsp;
@@ -107,9 +107,13 @@ function Footer() {
               />
             </li>
           </ol> */}
+          {/* <small className="py-3 pl-5" style={{ fontWeight: 'lighter' }}>
+            Developed with <span className="orange-color">❤</span> by
+            <span className="orange-color"> Persevers</span>
+          </small> */}
         </Col>
         <Col>
-          <h2 className="mb-3">Contact Us</h2>
+          <h3 className="mb-3">Contact Us</h3>
           <Form onSubmit={addFeedback}>
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
@@ -140,10 +144,6 @@ function Footer() {
           </Form>
         </Col>
       </Row>
-      <small className="py-3 pl-5" style={{ fontWeight: 'lighter' }}>
-        Developed with <span className="orange-color">❤</span> by
-        <span className="orange-color"> Persevers</span>
-      </small>
     </footer>
   );
 }

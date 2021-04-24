@@ -127,7 +127,7 @@ p {
 }
 .scale-text {
   color: white;
-  transition: all 0.3s;
+  transition: all 0.8s;
 }
 .scale-text:hover {
   color: white;
