@@ -140,10 +140,10 @@ function Footer() {
           </Form>
         </Col>
       </Row>
-      <p className="py-3 pl-5">
+      <small className="py-3 pl-5" style={{ fontWeight: 'lighter' }}>
         Developed with <span className="orange-color">❤</span> by
         <span className="orange-color"> Persevers</span>
-      </p>
+      </small>
     </footer>
   );
 }
