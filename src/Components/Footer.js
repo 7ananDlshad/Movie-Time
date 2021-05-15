@@ -32,8 +32,8 @@ function Footer() {
 
   return (
     <footer className="text-light footer-style">
-      <Row className="mx-5 my-3">
-        <Col>
+      <Row className="mx-1 my-3">
+        <Col lg={6} md={6} xs={12} className="pb-5">
           <h3>Find Us</h3>
           <div>
             <a href="https://www.linkedin.com/in/hanandlshad/" target="_blank">
@@ -63,56 +63,8 @@ function Footer() {
           <div>
             <p>info@movie.com</p>
           </div>
-          {/* <h3>Our Team</h3>
-          <ol>
-            <li className="py-3 size-of-li">
-              Hanan Dlshad&nbsp;&nbsp;&nbsp;&nbsp;
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                style={{ fontSize: '25px' }}
-                className="orange-color"
-              />
-            </li>
-
-            <li className="pb-3 size-of-li">
-              Shna Rafeeq&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                style={{ fontSize: '25px' }}
-                className="orange-color"
-              />
-            </li>
-            <li className="pb-3 size-of-li">
-              Azhin Rashid&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                style={{ fontSize: '25px' }}
-                className="orange-color"
-              />
-            </li>
-            <li className="pb-3 size-of-li">
-              Eman Yusef&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                style={{ fontSize: '25px' }}
-                className="orange-color"
-              />
-            </li>
-            <li className="size-of-li">
-              Sara Khalil&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                style={{ fontSize: '25px' }}
-                className="orange-color"
-              />
-            </li>
-          </ol> */}
-          {/* <small className="py-3 pl-5" style={{ fontWeight: 'lighter' }}>
-            Developed with <span className="orange-color">❤</span> by
-            <span className="orange-color"> Persevers</span>
-          </small> */}
         </Col>
-        <Col>
+        <Col lg={6} md={6} xs={12}>
           <h3 className="mb-3">Contact Us</h3>
           <Form onSubmit={addFeedback}>
             <Form.Group controlId="formBasicEmail">

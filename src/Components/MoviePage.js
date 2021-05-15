@@ -79,20 +79,20 @@ export default function MoviePage(props) {
         }}
       >
         <div className="mask">
-          <Button onClick={() => history.goBack()} className="bg-orange m-2">
+          {/* <Button onClick={() => history.goBack()} className="bg-orange m-2">
             <FontAwesomeIcon
               icon={faArrowLeft}
-              style={{ fontSize: '25px' }}
-              className="white-color "
+              style={{ fontSize: '20px' }}
+              className="white-color"
             />
-          </Button>
+          </Button> */}
         </div>
         {movie.id && (
           <Container>
             <Row>
-              <div className="col-4 my-5">
+              <Col className="col-4 my-5" md={4} lg={5} sm={12} xs={12}>
                 <img width="100%" alt="posterImage" src={posterImage} />
-                <div className="play">
+                <Col className="play">
                   <a
                     href="https://www.netflix.com/iq-en/"
                     className="play-link"
@@ -100,9 +100,15 @@ export default function MoviePage(props) {
                   >
                     <p className="scale-text">WATCH NOW</p>
                   </a>
-                </div>
-              </div>
-              <div className="col-6 text-white my-5">
+                </Col>
+              </Col>
+              <Col
+                className="col-6 text-white my-5"
+                md={6}
+                lg={7}
+                sm={12}
+                xs={12}
+              >
                 <h1>{movie.original_title}</h1>
                 <small style={{ fontWeight: 'lighter' }}>
                   <em>{movie.tagline}</em>
@@ -124,7 +130,7 @@ export default function MoviePage(props) {
                       );
                     })
                   : null}
-              </div>
+              </Col>
             </Row>
           </Container>
         )}

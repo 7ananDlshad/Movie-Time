@@ -106,7 +106,6 @@ export default function SearchBox() {
       <FormControl
         type="text"
         placeholder="Search..."
-        className="mr-sm-2"
         value={query}
         onChange={onChange}
         list="data"
@@ -117,8 +116,8 @@ export default function SearchBox() {
         ))}
       </datalist>
 
-      <Button type="submit" className="bg-orange">
-        Search &nbsp;
+      <Button type="submit" className="bg-orange" style={{ marginLeft: '5px' }}>
+        Search
         <span>
           {state.isLoading ? (
             <Spinner animation="border" variant="dark" size="sm" />

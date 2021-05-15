@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { constructUrl } from './Api';
-import { Button, Container, Row, Spinner } from 'react-bootstrap';
+import { Button, Container, Row, Spinner, Col } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -36,15 +36,15 @@ export default function ActorPage(props) {
       {person.id && (
         <Container>
           <Row>
-            <div className="col-4">
+            <Col className="col-4" md={4} lg={5} xs={12}>
               <img
                 width="100%"
                 alt="posterImage"
                 src={profileImage}
                 className="mb-5"
               />
-            </div>
-            <div className="col-8 text-white">
+            </Col>
+            <Col className="text-white" md={8} lg={7} xs={12}>
               <h1>{person.name}</h1>
 
               <small>
@@ -56,7 +56,7 @@ export default function ActorPage(props) {
               <br />
               <p>{person.biography}</p>
               <br />
-            </div>
+            </Col>
           </Row>
         </Container>
       )}

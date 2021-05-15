@@ -27,7 +27,7 @@ export default function Navbar() {
           <Link to="/top_rated" className="white-color links titles">
             Top Rated &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
           </Link>
-          <Link to="/now_playing" className="white-color links titles">
+          <Link to="/now_playing" className="white-color links titles pb-1">
             Now Playing &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
           </Link>
         </Nav>
