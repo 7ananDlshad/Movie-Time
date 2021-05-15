@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/Movie-Project/static/css/main.3452f2fb.chunk.css",
-    "main.js": "/Movie-Project/static/js/main.0c343c6e.chunk.js",
-    "main.js.map": "/Movie-Project/static/js/main.0c343c6e.chunk.js.map",
-    "runtime-main.js": "/Movie-Project/static/js/runtime-main.c3941f88.js",
-    "runtime-main.js.map": "/Movie-Project/static/js/runtime-main.c3941f88.js.map",
-    "static/css/2.829c9cb5.chunk.css": "/Movie-Project/static/css/2.829c9cb5.chunk.css",
-    "static/js/2.417b94e2.chunk.js": "/Movie-Project/static/js/2.417b94e2.chunk.js",
-    "static/js/2.417b94e2.chunk.js.map": "/Movie-Project/static/js/2.417b94e2.chunk.js.map",
-    "index.html": "/Movie-Project/index.html",
-    "precache-manifest.a6f9fe8c80600ea8452125eff563cb5c.js": "/Movie-Project/precache-manifest.a6f9fe8c80600ea8452125eff563cb5c.js",
-    "service-worker.js": "/Movie-Project/service-worker.js",
-    "static/css/2.829c9cb5.chunk.css.map": "/Movie-Project/static/css/2.829c9cb5.chunk.css.map",
-    "static/css/main.3452f2fb.chunk.css.map": "/Movie-Project/static/css/main.3452f2fb.chunk.css.map",
-    "static/js/2.417b94e2.chunk.js.LICENSE.txt": "/Movie-Project/static/js/2.417b94e2.chunk.js.LICENSE.txt",
-    "static/media/logo.webp": "/Movie-Project/static/media/logo.239676f7.webp"
+    "main.css": "/Movie-Time/static/css/main.3452f2fb.chunk.css",
+    "main.js": "/Movie-Time/static/js/main.ac92c135.chunk.js",
+    "main.js.map": "/Movie-Time/static/js/main.ac92c135.chunk.js.map",
+    "runtime-main.js": "/Movie-Time/static/js/runtime-main.b423045f.js",
+    "runtime-main.js.map": "/Movie-Time/static/js/runtime-main.b423045f.js.map",
+    "static/css/2.829c9cb5.chunk.css": "/Movie-Time/static/css/2.829c9cb5.chunk.css",
+    "static/js/2.e6c89b7e.chunk.js": "/Movie-Time/static/js/2.e6c89b7e.chunk.js",
+    "static/js/2.e6c89b7e.chunk.js.map": "/Movie-Time/static/js/2.e6c89b7e.chunk.js.map",
+    "index.html": "/Movie-Time/index.html",
+    "precache-manifest.bef0db5d2b4327cd8459c6c6b1b8e67f.js": "/Movie-Time/precache-manifest.bef0db5d2b4327cd8459c6c6b1b8e67f.js",
+    "service-worker.js": "/Movie-Time/service-worker.js",
+    "static/css/2.829c9cb5.chunk.css.map": "/Movie-Time/static/css/2.829c9cb5.chunk.css.map",
+    "static/css/main.3452f2fb.chunk.css.map": "/Movie-Time/static/css/main.3452f2fb.chunk.css.map",
+    "static/js/2.e6c89b7e.chunk.js.LICENSE.txt": "/Movie-Time/static/js/2.e6c89b7e.chunk.js.LICENSE.txt",
+    "static/media/logo.webp": "/Movie-Time/static/media/logo.239676f7.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.c3941f88.js",
+    "static/js/runtime-main.b423045f.js",
     "static/css/2.829c9cb5.chunk.css",
-    "static/js/2.417b94e2.chunk.js",
+    "static/js/2.e6c89b7e.chunk.js",
     "static/css/main.3452f2fb.chunk.css",
-    "static/js/main.0c343c6e.chunk.js"
+    "static/js/main.ac92c135.chunk.js"
   ]
 }
