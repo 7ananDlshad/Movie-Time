@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/Movie-Project/static/css/main.87ad6926.chunk.css",
-    "main.js": "/Movie-Project/static/js/main.926cd36d.chunk.js",
-    "main.js.map": "/Movie-Project/static/js/main.926cd36d.chunk.js.map",
+    "main.css": "/Movie-Project/static/css/main.3452f2fb.chunk.css",
+    "main.js": "/Movie-Project/static/js/main.0c343c6e.chunk.js",
+    "main.js.map": "/Movie-Project/static/js/main.0c343c6e.chunk.js.map",
     "runtime-main.js": "/Movie-Project/static/js/runtime-main.c3941f88.js",
     "runtime-main.js.map": "/Movie-Project/static/js/runtime-main.c3941f88.js.map",
     "static/css/2.829c9cb5.chunk.css": "/Movie-Project/static/css/2.829c9cb5.chunk.css",
-    "static/js/2.65130c0c.chunk.js": "/Movie-Project/static/js/2.65130c0c.chunk.js",
-    "static/js/2.65130c0c.chunk.js.map": "/Movie-Project/static/js/2.65130c0c.chunk.js.map",
+    "static/js/2.417b94e2.chunk.js": "/Movie-Project/static/js/2.417b94e2.chunk.js",
+    "static/js/2.417b94e2.chunk.js.map": "/Movie-Project/static/js/2.417b94e2.chunk.js.map",
     "index.html": "/Movie-Project/index.html",
-    "precache-manifest.6acdf93b1bf74e0c0b641cd938ba4fd5.js": "/Movie-Project/precache-manifest.6acdf93b1bf74e0c0b641cd938ba4fd5.js",
+    "precache-manifest.a6f9fe8c80600ea8452125eff563cb5c.js": "/Movie-Project/precache-manifest.a6f9fe8c80600ea8452125eff563cb5c.js",
     "service-worker.js": "/Movie-Project/service-worker.js",
     "static/css/2.829c9cb5.chunk.css.map": "/Movie-Project/static/css/2.829c9cb5.chunk.css.map",
-    "static/css/main.87ad6926.chunk.css.map": "/Movie-Project/static/css/main.87ad6926.chunk.css.map",
-    "static/js/2.65130c0c.chunk.js.LICENSE.txt": "/Movie-Project/static/js/2.65130c0c.chunk.js.LICENSE.txt",
+    "static/css/main.3452f2fb.chunk.css.map": "/Movie-Project/static/css/main.3452f2fb.chunk.css.map",
+    "static/js/2.417b94e2.chunk.js.LICENSE.txt": "/Movie-Project/static/js/2.417b94e2.chunk.js.LICENSE.txt",
     "static/media/logo.webp": "/Movie-Project/static/media/logo.239676f7.webp"
   },
   "entrypoints": [
     "static/js/runtime-main.c3941f88.js",
     "static/css/2.829c9cb5.chunk.css",
-    "static/js/2.65130c0c.chunk.js",
-    "static/css/main.87ad6926.chunk.css",
-    "static/js/main.926cd36d.chunk.js"
+    "static/js/2.417b94e2.chunk.js",
+    "static/css/main.3452f2fb.chunk.css",
+    "static/js/main.0c343c6e.chunk.js"
   ]
 }

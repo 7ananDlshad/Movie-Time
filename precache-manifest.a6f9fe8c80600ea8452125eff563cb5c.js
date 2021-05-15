@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "151d207367e027036cff99aa856d1daa",
+    "revision": "cde8d7f088bf45f3998b22c5edd82566",
     "url": "/Movie-Project/index.html"
   },
   {
-    "revision": "fef2edcf06b751f3aec0",
+    "revision": "8b3b915f0ab80521f72d",
     "url": "/Movie-Project/static/css/2.829c9cb5.chunk.css"
   },
   {
-    "revision": "2067939dee0dd07c9157",
-    "url": "/Movie-Project/static/css/main.87ad6926.chunk.css"
+    "revision": "d7a60a0c6b03c01fa522",
+    "url": "/Movie-Project/static/css/main.3452f2fb.chunk.css"
   },
   {
-    "revision": "fef2edcf06b751f3aec0",
-    "url": "/Movie-Project/static/js/2.65130c0c.chunk.js"
+    "revision": "8b3b915f0ab80521f72d",
+    "url": "/Movie-Project/static/js/2.417b94e2.chunk.js"
   },
   {
     "revision": "da1ddcda7183b6313ab6bca1da290ddd",
-    "url": "/Movie-Project/static/js/2.65130c0c.chunk.js.LICENSE.txt"
+    "url": "/Movie-Project/static/js/2.417b94e2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2067939dee0dd07c9157",
-    "url": "/Movie-Project/static/js/main.926cd36d.chunk.js"
+    "revision": "d7a60a0c6b03c01fa522",
+    "url": "/Movie-Project/static/js/main.0c343c6e.chunk.js"
   },
   {
     "revision": "a98595e6dd501fcee8ed",
