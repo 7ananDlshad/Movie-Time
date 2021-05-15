@@ -9,7 +9,7 @@ export default function Navbar() {
     <NavBarBootstarp expand="lg" className="flex-shrink-1 navbar-style">
       <Link to="/">
         <NavBarBootstarp.Brand className="white-color">
-          <img src={logo} alt="fav icon" width="30" height="30" />
+          <img src={logo} alt="fav icon" width="43" height="43" />
         </NavBarBootstarp.Brand>
       </Link>
       <NavBarBootstarp.Toggle aria-controls="basic-Navbar-nav" />
